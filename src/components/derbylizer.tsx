@@ -1,9 +1,8 @@
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import * as XLSX from "xlsx";
 
-export default function Derbylizer({ teams }: { teams: { player1: string; handicap1: number; player2?: string; handicap2?: number }[] }) {
+export default function Derbylizer({ teams }: { teams: { player1: string; player2?: string; }[] }) {
   const tableRef = useRef<HTMLDivElement>(null);
 
   const handlePrint = () => {

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { GalleryVerticalEnd } from "lucide-react";
 import { DerbyForm } from "../components/form";
-import Derbylizer from "../components/Derbylizer";
+import Derbylizer from "../components/derbylizer";
 
 export default function Page() {
   const [players, setPlayers] = useState<{ name: string; handicap: number }[]>([]);

@@ -6,7 +6,6 @@ import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import * as XLSX from "xlsx";
 import { useState } from "react";
-import { parse } from "querystring";
 
 export function DerbyForm({
   className,
@@ -62,7 +61,7 @@ export function DerbyForm({
       <div className="flex flex-col items-center gap-2 text-center">
         <h1 className="text-2xl font-bold">Upload or Enter Player Data</h1>
         <p className="text-sm text-muted-foreground">
-          Upload an Excel file with "NAME" and "HANDICAP" columns, or enter data manually using the format:<br />
+          Upload an Excel file with &quot;NAME&quot; and &quot;HANDICAP&quot; columns, or enter data manually using the format:<br />
           <strong>Name, Handicap</strong> (each player on a new line)
         </p>
       </div>
